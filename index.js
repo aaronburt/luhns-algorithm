@@ -1,13 +1,13 @@
 /**
  * @description This class is used to verify user input
  */
-class Verify {
+class Card {
     /**
      * @description This method uses Luhn algorithm to check whether a 16 digit is valid - this doesn't poll any external services so isn't 100%
      * @param {string} card - Enter the 16 Digit card number to check
      * @returns {boolean} True or False - If the algorthim is met
      */
-    CardChecker(card){
+    Check(card){
         if(card.length !== 16){ throw new Error('Card must have 16 digits') }
         let check = []
         for(let i = 0; i < card.length; i++){
@@ -34,4 +34,4 @@ class Verify {
     }
 }
 
-module.exports = Verify;
+module.exports = Card;
