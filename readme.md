@@ -5,8 +5,8 @@ Javascript implementation of Luhn's Algorithm used for checking the validity of 
 
 ## Usage
 ```javascript
-const Card = new Card();
-let Check = Card.Check('4929207313500168')
+const DebitCard = new Card();
+let Check = DebitCard.Check('4929207313500168')
 console.log(Check)
 ```
 
